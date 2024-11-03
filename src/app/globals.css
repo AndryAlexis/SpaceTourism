@@ -1,7 +1,12 @@
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* IMPORTANT CLASSES: custom-grid | custom-breakout | custom-full-width */
+
+/* CSS Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,12 +19,37 @@
   }
 }
 
+/* Base Styles */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Components */
 .bg-desktop-image {
   @apply bg-[url('./public/home/background-home-desktop.jpg')];
+}
+
+.mainContainer {
+  @apply h-full flex gap-24 justify-center items-center max-w-screen-2xl;
+}
+
+.buttonContainer {
+  @apply flex items-center justify-center h-60 w-60 min-w-60 min-h-60 rounded-full bg-slate-300 relative cursor-pointer;
+}
+
+/* Pseudo-elements & Media Queries */
+.buttonContainer::after {
+  @apply content-[""] absolute top-1/2 left-1/2 w-[150%] h-[150%] rounded-full z-10 transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 bg-transparent pointer-events-none;
+}
+
+.buttonContainer:hover::after {
+  @apply bg-[rgba(255,255,255,0.3)] pointer-events-auto;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    @apply text-center py-36 flex-col;
+  }
 }

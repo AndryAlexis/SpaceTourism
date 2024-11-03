@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'tablet': {'max': '1024px'},
+      },
     },
   },
   plugins: [],
