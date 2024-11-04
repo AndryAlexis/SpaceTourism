@@ -8,7 +8,14 @@ import NavigationSection from './navigation/NavSection';
  * Uses a grid layout with two columns
  */
 const Header = (): JSX.Element => <>
-    <header className="flex justify-center items-center pt-8">
+    <header className="
+        flex
+        items-center 
+        justify-center
+        pt-8
+        mobile:justify-between
+        mobile:relative
+    ">
         <LogoSection />
         <NavigationSection />
     </header>

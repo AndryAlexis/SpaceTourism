@@ -3,40 +3,51 @@ import Main from "@/components/main";
 /**
  * Home page component that displays the main landing page content
  * Features:
- * - Responsive full-screen layout
  * - Header with navigation
- * - Two-column main content
  * - Interactive explore button with hover effect
+ * - Responsive full-screen layout
+ * - Two-column main content
  */
 const Page = (): JSX.Element => {
   return (
-    // Main container with full viewport height
-    <div className="h-dvh flex justify-center items-center">
-      {/* Main content wrapper with two columns */}
+    <div className="flex h-dvh items-center justify-center">
       <Main className="h-[inherit]">
-        {/* Left content section with welcome message */}
-        <section className="flex flex-col gap-6">
-          {/* Subheading with custom tracking */}
-          <h2 className="order-1 text-xl uppercase tracking-wider">
+        {/* Welcome content section */}
+        <section className="flex flex-col gap-6 mobile:px-4">
+          <h2 className="order-1 text-xl tracking-wider uppercase mobile:text-lg">
             So, you want to travel to
           </h2>
           
-          {/* Main heading with large text */}
-          <h1 className="order-2 text-9xl uppercase">
+          <h1 className="order-2 text-9xl uppercase mobile:text-8xl">
             Space
           </h1>
           
-          {/* Description paragraph with controlled width and line height */}
-          <p className="order-3 max-w-prose leading-relaxed">
+          <p className="order-3 leading-loose max-w-prose mobile:text-sm">
             Let's face it; if you want to go to space, you might as well genuinely 
             go to outer space and not hover kind of on the edge of it. Well sit back, 
             and relax because we'll give you a truly out of this world experience!
           </p>
         </section>
 
-        {/* Right section with interactive explore button */}
-        <div className="buttonContainer">
-          <button className="text-black text-2xl uppercase">
+        {/* Explore button */}
+        <div className={`
+          relative flex items-center justify-center
+          h-60 w-60 min-h-60 min-w-60 
+          rounded-full bg-slate-300 
+          cursor-pointer
+          after:content-['']
+          after:absolute after:top-1/2 after:left-1/2
+          after:-translate-x-1/2 after:-translate-y-1/2
+          after:w-[150%] after:h-[150%]
+          after:rounded-full after:z-10
+          after:bg-transparent after:pointer-events-none
+          after:transition-all after:duration-300 after:ease-in-out
+          hover:after:bg-[rgba(255,255,255,0.3)]
+          hover:after:pointer-events-auto
+
+          mobile:h-40 mobile:w-40 mobile:min-h-40 mobile:min-w-40
+        `}>
+          <button className="text-2xl text-black uppercase">
             Explore
           </button>
         </div>

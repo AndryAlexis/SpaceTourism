@@ -26,7 +26,7 @@ interface TemplateProps {
 const Template = ({ children }: TemplateProps) => {
   return <>
     {/* Main wrapper div with background image */}
-    <div className="bg-desktop-image bg-cover">
+    <div className="bg-[url('./public/home/background-home-desktop.jpg')] tablet:bg-[url('./public/home/background-home-tablet.jpg')] mobile:bg-[url('./public/home/background-home-mobile.jpg')] bg-cover">
         {/* Global header component */}
         <Header />
         {/* Render child components passed to template */}

@@ -14,6 +14,7 @@ const config: Config = {
       },
       screens: {
         'tablet': {'max': '1024px'},
+        'mobile': {'max': '674px'},
       },
     },
   },

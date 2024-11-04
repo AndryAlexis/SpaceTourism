@@ -27,26 +27,34 @@ body {
 }
 
 /* Components */
-.bg-desktop-image {
+/* .bg-desktop-image {
   @apply bg-[url('./public/home/background-home-desktop.jpg')];
 }
+
+.bg-tablet-image {
+  @apply bg-[url('./public/home/background-home-tablet.jpg')];
+}
+
+.bg-mobile-image {
+  @apply bg-[url('./public/home/background-home-mobile.jpg')];
+} */
 
 .mainContainer {
   @apply h-full flex gap-24 justify-center items-center max-w-screen-2xl;
 }
 
-.buttonContainer {
+/* .buttonContainer {
   @apply flex items-center justify-center h-60 w-60 min-w-60 min-h-60 rounded-full bg-slate-300 relative cursor-pointer;
-}
+} */
 
 /* Pseudo-elements & Media Queries */
-.buttonContainer::after {
+/* .buttonContainer::after {
   @apply content-[""] absolute top-1/2 left-1/2 w-[150%] h-[150%] rounded-full z-10 transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 bg-transparent pointer-events-none;
-}
+} */
 
-.buttonContainer:hover::after {
+/* .buttonContainer:hover::after {
   @apply bg-[rgba(255,255,255,0.3)] pointer-events-auto;
-}
+} */
 
 @media (max-width: 1024px) {
   .mainContainer {
