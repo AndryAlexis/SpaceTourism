@@ -1,6 +1,14 @@
- # Space Tourism Website
+# Space Tourism Website
 
 A modern, responsive website for space tourism featuring an interactive user interface and seamless navigation.
+
+## 🔗 Links
+
+- **GitHub Repository**: [https://andryalexis.github.io/SpaceTourism/](https://andryalexis.github.io/SpaceTourism/)
+
+## 📸 Preview
+
+![Space Tourism Website Preview](./src/app/public/preview.jpg)
 
 ## 🚀 Technologies Used
 
@@ -17,17 +25,6 @@ A modern, responsive website for space tourism featuring an interactive user int
 - **Client-side Navigation** - Using Next.js's `usePathname` hook for client-side routing
 - **Component-Based Structure** - Modular components like `Header` and `ExploreButton`
 - **TypeScript JSX** - Strongly typed component definitions with TSX
-
-### Project Structure
-
-src/
-├── app/
-│ ├── page.tsx # Main homepage component
-│ └── home/
-│ ├── components/ # Home-specific components
-│ └── styles/ # Home-specific styles
-├── components/
-│ └── header.tsx # Global header component
 
 ## 🛠️ Setup and Installation
 
