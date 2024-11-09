@@ -40,6 +40,7 @@ export const destinationStyles = {
   heading: `
     font-bellefair 
     text-2xl 
+    tablet:text-xl
     flex 
     gap-4 
     pt-10

@@ -11,14 +11,15 @@ export const contentStyles = {
         flex 
         gap-4
         tablet:justify-center
+        tablet:text-2xl
     `,
 
     // Large title text for selected destination
     destinationTitle: `
         font-bellefair 
         text-9xl
-        tablet:text-8xl
-        mobile:text-7xl
+        tablet:text-7xl
+        mobile:text-6xl
     `,
 
     // Container for destination description text
@@ -47,6 +48,7 @@ export const contentStyles = {
     infoItem: `
         flex 
         flex-col 
+        gap-2
         justify-center
     `,
 
@@ -54,6 +56,6 @@ export const contentStyles = {
     infoValue: `
         font-bellefair 
         text-2xl
-        mobile:text-4xl
+        tablet:text-4xl
     `
 }
