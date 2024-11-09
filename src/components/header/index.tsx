@@ -1,13 +1,13 @@
 // Required imports for the header components
 import React from 'react';
-import LogoSection from './Logo';
-import NavigationSection from './navigation/NavSection';
+import LogoSection from './components/logo';
+import NavigationSection from './components/navigation';
 
 /**
  * Header component that combines LogoSection and NavigationSection
  * Uses a grid layout with two columns
  */
-const Header = (): JSX.Element => <>
+const Header = ({ activePage }: { activePage: string }): JSX.Element => <>
     <header className="
         flex
         items-center 
@@ -15,9 +15,10 @@ const Header = (): JSX.Element => <>
         pt-8
         mobile:justify-between
         mobile:relative
+        w-full
     ">
         <LogoSection />
-        <NavigationSection />
+        <NavigationSection activePage={activePage} />
     </header>
 </>
 
