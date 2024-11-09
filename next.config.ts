@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",  // Enables static exports
   basePath: "https://github.com/AndryAlexis/SpaceTourism",
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
