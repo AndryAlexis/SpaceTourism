@@ -5,7 +5,11 @@ import Header from "@/components/header";
 import ExploreButton from "@/app/home/components/exploreButton";
 import { usePathname } from "next/navigation";
 import { getHomeStyles } from "./home/styles/home.styles";
-import { HomePageProps } from "./home/interfaces/home.interfaces";
+
+interface HomePageProps {
+  title?: string;
+  description?: string;
+}
 
 /**
  * Home page component that displays the main landing page content.
