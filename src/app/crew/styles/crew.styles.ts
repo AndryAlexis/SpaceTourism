@@ -30,7 +30,7 @@ export const crewStyles = {
   `,
 
   heading: `
-    font-bellefair text-2xl flex gap-4 pt-10    
+    font-bellefair text-2xl flex gap-4 pt-10 tablet:text-xl
   `,
 
   headingNumber: `text-white/25`,

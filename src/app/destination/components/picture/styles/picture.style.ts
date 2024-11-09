@@ -9,7 +9,7 @@ export const pictureStyles = {
         tablet:h-auto
         tablet:min-h-0
         w-10/12 
-        tablet:w-4/12
+        tablet:w-6/12
         transition-opacity 
         duration-300
     `,

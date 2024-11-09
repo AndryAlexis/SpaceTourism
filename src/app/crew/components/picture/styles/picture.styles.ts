@@ -10,6 +10,7 @@ export const pictureClasses = {
     items-center
     tablet:items-end
     w-7/12
+    mobile:w-full
   `,
   image: `
     w-full
