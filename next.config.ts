@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "https://github.com/AndryAlexis/SpaceTourism",
+  /* config options here */
 };
 
 export default nextConfig;
