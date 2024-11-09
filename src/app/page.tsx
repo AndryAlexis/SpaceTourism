@@ -6,24 +6,13 @@ import ExploreButton from "@/app/home/components/exploreButton";
 import { usePathname } from "next/navigation";
 import { getHomeStyles } from "./home/styles/home.styles";
 
-interface HomePageProps {
-  title?: string;
-  description?: string;
-}
-
 /**
  * Home page component that displays the main landing page content.
  * Provides a responsive layout with hero section and call-to-action.
  * 
- * @param {Object} props - Component props
- * @param {string} [props.title="Space"] - Main heading text
- * @param {string} [props.description] - Description paragraph text
  * @returns {JSX.Element} Rendered home page component
  */
-const HomePage = ({
-  title = "Space",
-  description = "Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it."
-}: HomePageProps): JSX.Element => {
+const HomePage = (): JSX.Element => {
   // Get current route for navigation highlighting
   const pathname = usePathname();
   
@@ -45,11 +34,11 @@ const HomePage = ({
           </h2>
           
           <h1 className={styles.headingClasses}>
-            {title}
+            Space
           </h1>
           
           <p className={styles.descriptionClasses}>
-            {description}
+            Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
           </p>
         </section>
 
